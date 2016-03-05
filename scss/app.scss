@@ -48,31 +48,46 @@
 
 h1,h2,h3,h4,h5,p,li,div,section,input,select,textarea,button,a{
   font-family: 'Lato';
+
 }
 
 .top-bar-right {
   ul li a {
-    color: black;
+    color: $faded-black;
   }
 	background-color: white;
 }
 
 #hero-image {
-  background-image: url("../img/image11.jpg");
+  background-image: url("../img/hero_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 80vh;
+
 }
 #pitch-wrapper {
   display: table;
   width: 100%;
   height: inherit;
+  background-color: black;
+  opacity: 0.7;
+
 }
 #hero-pitch {
   display: table-cell;
   color: $white;
   vertical-align: middle;
+  font-size: 5em;
+
+}
+
+section{
+  padding: 8% 0;
+
+  &:first-of-type{
+    padding: 0;
+  }
 }
 
 
@@ -106,11 +121,12 @@ h1,h2,h3,h4,h5,p,li,div,section,input,select,textarea,button,a{
 	}
 }
 
-.off-canvas{
-  background-color: #AB3E68;
+.callout{
+  color: $faded-black;
 }
+
 
 #footer{
   background-color: #AB3E68;
-  color:white;
+  color: $white;
 }
